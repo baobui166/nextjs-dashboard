@@ -199,6 +199,14 @@ npm install next@latest react@latest react-dom@latest eslint-config-next@latest
 - tiếp theo add đoạn code dưới này vào conponent bạn muốn sử dunngj :
   export const experimental_ppr = true;
 
+# why use search Params
+
+- There are a couple of benefits of implementing search with URL params:
+
+* Bookmarkable (đánh dấu) and Shareable (chia sẻ) URLs
+* Server-Side Rendering and Initial Load
+* Analytics and Tracking (theo dõi)
+
 # CDN, Serveless computing, Edge, ISR
 
 - Mạng phân phối nội dung (CDN) là một mạng lưới gồm các máy chủ được kết nối với nhau giúp tăng tốc độ tải trang web cho các ứng dụng tiêu tốn nhiều dữ liệu.

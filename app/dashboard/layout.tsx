@@ -1,5 +1,7 @@
 import SideNav from "@/app/ui/dashboard/sidenav"
 
+//export const experimental_ppr = true (The experimental feature "experimental.ppr" can only be enabled when using the latest canary version of Next.js.)
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className='flex h-screen flex-col md:flex-row md:overflow-hidden'>

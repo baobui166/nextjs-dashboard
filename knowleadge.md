@@ -189,6 +189,10 @@ npm install next@latest react@latest react-dom@latest eslint-config-next@latest
 - By streaming, you can prevent slow data requests from blocking your whole page. This allows the user to see and interact with parts of the page without waiting for all the data to load before any UI can be shown to the user.
 - There are two ways you implement streaming in Next.js: At the page level, with the loading.tsx file; For specific components, with <Suspense>.
 
+# SERVER ACTION
+
+- React Server Actions allow you to run asynchronous code directly (trực tiếp) on the server. They eliminate (loại bỏ) the need to create API endpoints to mutate your data. Instead, you write asynchronous functions that execute on the server and can be invoked (gọi) from your Client or Server Components.
+
 # Partial Prerendering (PPR).
 
 - A new rendering model that allows you to combine the benefits of static and dynamic rendering in the same route.
@@ -292,3 +296,11 @@ npm install next@latest react@latest react-dom@latest eslint-config-next@latest
 - vd: localhost:8080/cabins/312, thì tạo ra folder cabins, sau đó tạo ra file [cabinsId].
 
 # getStaticProps
+
+- There are three things we're already doing to improve accessibility in our forms:
+
+* Semantic HTML: Using semantic elements (<input>, <option>, etc) instead of <div>. This allows assistive (hỗ trợ) technologies (AT) to focus on the input elements and provide appropriate (phù hợp) contextual(ngữ cảnh) information to the user, making the form easier to navigate and understand.
+
+* Labelling: Including <label> and the htmlFor attribute ensures that each form field has a descriptive text label. This improves AT support by providing context and also enhances usability (khả năng sử dụng) by allowing users to click on the label to focus on the corresponding (tương ứng) input field.
+
+* Focus Outline: The fields are properly styled to show an outline when they are in focus. This is critical for accessibility as it visually indicates the active element on the page, helping both keyboard and screen reader users to understand where they are on the form. You can verify (xác minh) this by pressing tab.
